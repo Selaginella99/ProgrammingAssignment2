@@ -42,8 +42,8 @@ cacheSolve <- function(x, ...) {
     ## getting the matrix from the object
     matrix <- x$get()
     ## calculating the inverse by using matrix multiplication
-    # im <- slove(matrix) %*% matrix
-    im <- slove(matrix,...)
+    # im <- solve(matrix) %*% matrix
+    im <- solve(matrix,...)
     x$setinverse(im)
     ## returning a matrix that is the inverse of 'x'
     im
